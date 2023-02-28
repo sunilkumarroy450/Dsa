@@ -20,30 +20,41 @@
 
 //#Masai Palindromic Substring
 
-function MasaiPalindromicSubstring(S) {
-  var ans = 0;
-  for (var i = 0; i < S.length; i++) {
-    for (var j = i; j < S.length; j++) {
-      var bag = "";
+// function MasaiPalindromicSubstring(S) {
+//   var ans = 0;
+//   for (var i = 0; i < S.length; i++) {
+//     for (var j = i; j < S.length; j++) {
+//       var bag = "";
 
-      for (var k = i; k <= j; k++) {
-        bag = bag + S[k];
-      }
+//       for (var k = i; k <= j; k++) {
+//         bag = bag + S[k];
+//       }
 
-      var rev_bag = "";
+//       var rev_bag = "";
 
-      for (var n = j; n >= i; n--) {
-        rev_bag = rev_bag + S[n];
-      }
-      if (bag == rev_bag) {
-        if (ans < bag.length) {
-          ans = bag.length;
-        }
-      }
-    }
+//       for (var n = j; n >= i; n--) {
+//         rev_bag = rev_bag + S[n];
+//       }
+//       if (bag == rev_bag) {
+//         if (ans < bag.length) {
+//           ans = bag.length;
+//         }
+//       }
+//     }
+//   }
+//   console.log(ans);
+// }
+
+// let str = "thisracecarisgood";
+// MasaiPalindromicSubstring(str)
+
+//#Print Characters of a String
+
+function PrintCharactersOfAString(str) {
+  for (var i = 0; i < str.length; i++) {
+    console.log(str[i]);
   }
-  console.log(ans);
 }
 
-let str = "thisracecarisgood";
-MasaiPalindromicSubstring(str)
+let str = "nurpul";
+PrintCharactersOfAString(str);
