@@ -48,13 +48,13 @@
 // let str = "thisracecarisgood";
 // MasaiPalindromicSubstring(str)
 
+
 //#Print Characters of a String
+// function PrintCharactersOfAString(str) {
+//   for (var i = 0; i < str.length; i++) {
+//     console.log(str[i]);
+//   }
+// }
 
-function PrintCharactersOfAString(str) {
-  for (var i = 0; i < str.length; i++) {
-    console.log(str[i]);
-  }
-}
-
-let str = "nurpul";
-PrintCharactersOfAString(str);
+// let str = "nurpul";
+// PrintCharactersOfAString(str);
