@@ -22,3 +22,26 @@ let mat = [
   [7, 8, 9],
 ];
 nTraversal(mat);
+
+function reverseNtraversal(matrix) {
+  var bag = "";
+  for (var i = 0; i < matrix.length; i++) {
+    bag += matrix[i][0] + " ";
+  }
+
+  for (var i = matrix.length - 2; i >= 0; i--) {
+    bag += matrix[i][matrix.length - 1 - i] + " ";
+  }
+
+  for (var i = 1; i < matrix.length; i++) {
+    bag += matrix[i][matrix.length - 1] + " ";
+  }
+  console.log(bag);
+}
+
+let mat1 = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+];
+reverseNtraversal(mat1);
