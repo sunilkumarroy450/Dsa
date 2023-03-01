@@ -93,24 +93,24 @@ let N = 3;
 let M = 4;
 SpiralTraversal(mat2, N, M);
 
-
 //#Z Traversal
-function zTraversal(N,arr){
-    var bag ="";
-    for(var i=0;i<N;i++)
-    {
-        bag+=arr[0][i]+" ";
-    }
-    for(var i=1;i<N;i++)
-    {
-        bag+=arr[i][N-1-i]+" ";
-    }
-    for(var i=1;i<N;i++)
-    {
-        bag+=arr[N-1][i]+" ";
-    }
-    console.log(bag);
+function zTraversal(N, arr) {
+  var bag = "";
+  for (var i = 0; i < N; i++) {
+    bag += arr[0][i] + " ";
+  }
+  for (var i = 1; i < N; i++) {
+    bag += arr[i][N - 1 - i] + " ";
+  }
+  for (var i = 1; i < N; i++) {
+    bag += arr[N - 1][i] + " ";
+  }
+  console.log(bag);
 }
-let n=3;
-let arr=[[1,2,3],[4,5,6],[7,8,9]]
-zTraversal(n,arr)
+let n = 3;
+let arr = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+];
+zTraversal(n, arr);
