@@ -43,3 +43,21 @@ function swap1(arr, i, j) {
 let arr1 = [3, 1, 0, 9, 8];
 const res1 = Sort1(arr1);
 console.log(res1);
+
+//#Anagram
+function Anagram(str1, str2) {
+  str1 = str1.replace(/[^\w]/g, "").toLowerCase();
+  str2 = str2.replace(/[^\w]/g, "").toLowerCase();
+
+  return str1.split("").sort().join("") === str2.split("").sort().join("");
+}
+
+let str1 = "anagram";
+let str2 = "nag a ram";
+
+const res2 = Anagram(str1, str2);
+if (res2) {
+  console.log("It is an Anagram");
+} else {
+  console.log("It is not an Anagram");
+}
