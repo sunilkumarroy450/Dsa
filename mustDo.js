@@ -61,3 +61,20 @@ if (res2) {
 } else {
   console.log("It is not an Anagram");
 }
+
+//#Check Palindrome
+
+function CheckPalindrom(str) {
+  let bag = "";
+  for (let i = str.length - 1; i >= 0; i--) {
+    bag += str[i];
+  }
+  if (bag === str) {
+    console.log("It is a Palindrom");
+  } else {
+    console.log("It is not a Palindrom");
+  }
+}
+
+let str = "naman";
+CheckPalindrom(str);
